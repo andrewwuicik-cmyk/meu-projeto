@@ -56,7 +56,16 @@ margin: 0 auto;
 
     <img src="copadomundo.jpg" alt="Troféu dourado da Copa do Mundo da FIFA. 
     A escultura exibe duas figuras humanas estilizadas segurando o globo terrestre, sobre uma base dourada com faixas verdes e a inscrição 'FIFA WORLD CUP">
+    <button>❤️<span>0</span></button>
 </main>
  </header>
 </body>
+<script>
+    const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+    </script>
 </html>
